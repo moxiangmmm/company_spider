@@ -1,0 +1,9 @@
+2018-01-24 09:28:54 [scrapy.core.scraper] ERROR: Error processing {'cf_code': None, 'type': '房地产开发企业资质', 'company': None, 't_page': '105', 'd_list': ['类\xa0\xa0别', '标\xa0\xa0题', '日\xa0\xa0期', '类\xa0\xa0别', '标\xa0\xa0题', '日\xa0\xa0期', '类\xa0\xa0别', '标\xa0\xa0题', '日\xa0\xa0期', '类\xa0\xa0别', '标\xa0\xa0题', '日\xa0\xa0期', '招聘单位', '职\xa0位', '日\xa0期', '新蒲建设集团有限公司', '工程部经理', '2015-04-10', '新蒲建设集团有限公司', '成本部经理', '2015-04-10', '新蒲建设集团有限公司', '一级建造师', '2015-04-10', '新蒲建设集团有限公司', '资料写作人员', '2015-04-10', '新蒲建设集团有限公司', '内部报刊采编人员', '2015-04-10', '新蒲建设集团有限公司', '企业管理人员', '2015-04-10', '新蒲建设集团有限公司', '造价师', '2015-04-10', '新蒲建设集团有限公司', '会计', '2015-01-31', '姓\xa0名', '学\xa0历', '期望职位', '工作经验', '宋文超', '本科', '其他', '10年以上', '马保宁', '本科', '监理工程师', '3-5年', '王亮', '大专', '3-5年'], 'page': 1}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/pipelines.py", line 53, in process_item
+    item_exit = self.item_dupfilter(item, spider)
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/pipelines.py", line 72, in item_dupfilter
+    f.update(item["cf_code"].encode())
+AttributeError: 'NoneType' object has no attribute 'encode'

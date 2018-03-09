@@ -1,0 +1,21 @@
+2018-01-22 13:48:29 [scrapy.core.scraper] ERROR: Spider error processing <POST http://projreg.szjs.gov.cn/web/webService/getProjectList1.json> (referer: None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sz_pro.py", line 52, in parse
+    callback=self.main_parse
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/http/request/form.py", line 31, in __init__
+    querystr = _urlencode(items, self.encoding)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/http/request/form.py", line 66, in _urlencode
+    for k, vs in seq
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/http/request/form.py", line 66, in <listcomp>
+    for k, vs in seq
+ValueError: not enough values to unpack (expected 2, got 1)

@@ -1,0 +1,1248 @@
+2018-01-24 19:57:21 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/JzyList.aspx> (referer: None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/parsel/selector.py", line 222, in xpath
+    **kwargs)
+  File "src/lxml/lxml.etree.pyx", line 1587, in lxml.etree._Element.xpath (src/lxml/lxml.etree.c:61854)
+  File "src/lxml/xpath.pxi", line 307, in lxml.etree.XPathElementEvaluator.__call__ (src/lxml/lxml.etree.c:178516)
+  File "src/lxml/xpath.pxi", line 227, in lxml.etree._XPathEvaluatorBase._handle_result (src/lxml/lxml.etree.c:177421)
+lxml.etree.XPathEvalError: Unregistered function
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 55, in parse
+    company = response.xpath("//a[@onclick={}]/text()".format(h))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/http/response/text.py", line 119, in xpath
+    return self.selector.xpath(query, **kwargs)
+  File "/usr/local/lib/python3.5/dist-packages/parsel/selector.py", line 226, in xpath
+    six.reraise(ValueError, ValueError(msg), sys.exc_info()[2])
+  File "/usr/local/lib/python3.5/dist-packages/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.5/dist-packages/parsel/selector.py", line 222, in xpath
+    **kwargs)
+  File "src/lxml/lxml.etree.pyx", line 1587, in lxml.etree._Element.xpath (src/lxml/lxml.etree.c:61854)
+  File "src/lxml/xpath.pxi", line 307, in lxml.etree.XPathElementEvaluator.__call__ (src/lxml/lxml.etree.c:178516)
+  File "src/lxml/xpath.pxi", line 227, in lxml.etree._XPathEvaluatorBase._handle_result (src/lxml/lxml.etree.c:177421)
+ValueError: XPath error: Unregistered function in //a[@onclick=showInfo('JzyList_1.aspx?ent_id=4c33e4dc-7bc7-4d80-9f53-db056de808dc&cert_id=a228c592-71c0-4a77-b5b1-2d37939b58bf')]/text()
+2018-01-24 19:59:39 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/JzyList.aspx> (referer: None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/parsel/selector.py", line 222, in xpath
+    **kwargs)
+  File "src/lxml/lxml.etree.pyx", line 1587, in lxml.etree._Element.xpath (src/lxml/lxml.etree.c:61854)
+  File "src/lxml/xpath.pxi", line 307, in lxml.etree.XPathElementEvaluator.__call__ (src/lxml/lxml.etree.c:178516)
+  File "src/lxml/xpath.pxi", line 227, in lxml.etree._XPathEvaluatorBase._handle_result (src/lxml/lxml.etree.c:177421)
+lxml.etree.XPathEvalError: Unregistered function
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 55, in parse
+    company = response.xpath("//a[@onclick={}]/text()".format(h)).extract_first()
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/http/response/text.py", line 119, in xpath
+    return self.selector.xpath(query, **kwargs)
+  File "/usr/local/lib/python3.5/dist-packages/parsel/selector.py", line 226, in xpath
+    six.reraise(ValueError, ValueError(msg), sys.exc_info()[2])
+  File "/usr/local/lib/python3.5/dist-packages/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.5/dist-packages/parsel/selector.py", line 222, in xpath
+    **kwargs)
+  File "src/lxml/lxml.etree.pyx", line 1587, in lxml.etree._Element.xpath (src/lxml/lxml.etree.c:61854)
+  File "src/lxml/xpath.pxi", line 307, in lxml.etree.XPathElementEvaluator.__call__ (src/lxml/lxml.etree.c:178516)
+  File "src/lxml/xpath.pxi", line 227, in lxml.etree._XPathEvaluatorBase._handle_result (src/lxml/lxml.etree.c:177421)
+ValueError: XPath error: Unregistered function in //a[@onclick=showInfo('JzyList_1.aspx?ent_id=4c33e4dc-7bc7-4d80-9f53-db056de808dc&cert_id=a228c592-71c0-4a77-b5b1-2d37939b58bf')]/text()
+2018-01-24 20:04:42 [scrapy.core.scraper] ERROR: Error processing {'pro_list': ['序号', '项目名称', '暂无相关内容！'], 'main_list': ['基础信息', '企业名称', '山西鸿汇德空调设备安装有限公司', '详细地址', '山西省太原市小店区', '营业执照注册号', '91140105597392157B', '法定代表人', '武学平', '注册资本', '2000万元（人民币）', '经济性质', '有限责任公司（自然人投资或控股）', '证书编号', 'D314010714', '有效期', '2021-03-09', '资质类别及等级', '专业承包建筑机电安装工程专业三级', '发证机关', '太原市住房和城乡建设委员会', '发证日期', '2017-04-06'], 'page': 1, 'penalize_list': ['序号', '不良记录类别', '发生时间', '暂无相关内容！'], 'xy_list': ['当期', '评价日期', '信用评价等级', '评价机关', '评价等级截止日期', '暂无相关内容！'], 'href': 'http://jzsc.sxjs.gov.cn/Browse/JzyList_1.aspx?ent_id=4c33e4dc-7bc7-4d80-9f53-db056de808dc&cert_id=a228c592-71c0-4a77-b5b1-2d37939b58bf', 'pe_list': ['序号', '姓名', '类型', '证书编号', '证书状态', '1', '胡万春', '三类人员', '晋建安C（2015）0000824', '有效', '2', '黄魏', '三类人员', '晋建安C（2015）0000822', '有效', '3', '李龙', '三类人员', '晋建安B(2015)0007041', '有效', '4', '李茹娟', '三类人员', '晋建安B（2015）0000638', '有效', '5', '马秀莉', '三类人员', '晋建安C（2015）0000820', '有效', '6', '宁静', '三类人员', '晋建安C（2015）0000825', '有效', '7', '王兴龙', '三类人员', '晋建安C（2015）0000821', '有效', '8', '王旭', '三类人员', '晋建安C（2015）0000823', '有效', '9', '武学平', '三类人员', '晋建安B（2015）0000637', '有效', '10', '武学平', '三类人员', '晋建安A（2015）0000170', '有效', '11', '武毅', '三类人员', '晋建安B（2015）0000639', '有效', '12', '武毅', '三类人员', '晋建安A（2015）0000171', '有效', '13', '郜国旗', '三类人员', '晋建安B(2015)0005314', '有效', '14', '李茹娟', '注册建造师', '01175374', '有效', '首页', '|', '上一页', '|', '下一页', '|', '尾页', '当前显示 1  - 14 条   共 16 条\r\n\t页次:1 / 2 页    14 条/页'], 'total_page': 407, 'dt_list': ['序号', '考核日期', '考核结论', '考核机关', '考核结论截止日期', '暂无相关内容！'], 'prize_list': ['序号', '获奖名称', '获奖时间', '暂无相关内容！']}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/pipelines.py", line 47, in process_item
+    self.collection7.insert_one(dict(item))
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/collection.py", line 682, in insert_one
+    session=session),
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/collection.py", line 598, in _insert
+    bypass_doc_val, session)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/collection.py", line 578, in _insert_one
+    True, _insert_command, session)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/mongo_client.py", line 1098, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/usr/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/mongo_client.py", line 1404, in _tmp_session
+    s = self._ensure_session(session)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/mongo_client.py", line 1391, in _ensure_session
+    return self.start_session(causal_consistency=False)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/mongo_client.py", line 1369, in start_session
+    server_session = self._get_server_session()
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/mongo_client.py", line 1377, in _get_server_session
+    return self._topology.get_server_session()
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/topology.py", line 416, in get_server_session
+    None)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/topology.py", line 199, in _select_servers_loop
+    self._error_message(selector))
+pymongo.errors.ServerSelectionTimeoutError: 127.0.0.1:27017: [Errno 111] Connection refused
+2018-01-24 20:05:12 [scrapy.core.scraper] ERROR: Error processing {'pro_list': ['序号', '项目名称', '暂无相关内容！'], 'main_list': ['基础信息', '企业名称', '山西普华力拓电力工程有限公司', '详细地址', '山西省太原市小店区', '营业执照注册号', '911401003992713894', '法定代表人', '陈明生', '注册资本', '5000万元（人民币）', '经济性质', '有限责任公司', '证书编号', 'D314002546', '有效期', '2020-12-23', '资质类别及等级', '专业承包输变电工程专业三级', '发证机关', '太原市住房和城乡建设委员会', '发证日期', '2017-09-20'], 'page': 1, 'penalize_list': ['序号', '不良记录类别', '发生时间', '暂无相关内容！'], 'xy_list': ['当期', '评价日期', '信用评价等级', '评价机关', '评价等级截止日期', '暂无相关内容！'], 'href': 'http://jzsc.sxjs.gov.cn/Browse/JzyList_1.aspx?ent_id=4d7fa902-ab6c-473f-9c35-207fadd17890&cert_id=21ca53ca-d12c-4a3a-89a4-22dfdd7af251', 'pe_list': ['序号', '姓名', '类型', '证书编号', '证书状态', '1', '曹万峰', '三类人员', '晋建安B(2016)0000710', '有效', '2', '常建军', '三类人员', '晋建安C（2015）0002417', '有效', '3', '陈建强', '三类人员', '晋建安B(2017)0002743', '有效', '4', '陈明生', '三类人员', '晋建安A（2015）0000536', '有效', '5', '陈颖', '三类人员', '晋建安B(2016)0006865', '有效', '6', '冯垚鑫', '三类人员', '晋建安B(2016)0002200', '有效', '7', '高堃', '三类人员', '晋建安B(2016)0000731', '有效', '8', '侯明霞', '三类人员', '晋建安B（2015）0001738', '有效', '9', '黄朝宇', '三类人员', '晋建安A（2015）0000538', '有效', '10', '黄碎宇', '三类人员', '晋建安C(2016)0002538', '有效', '11', '蒋学林', '三类人员', '晋建安B(2017)0002801', '有效', '12', '景文', '三类人员', '晋建安B（2015）0001737', '有效', '13', '李凤君', '三类人员', '晋建安B(2016)0006878', '有效', '14', '李杰', '三类人员', '晋建安C（2015）0002414', '有效', '首页', '|', '上一页', '|', '下一页', '|', '尾页', '当前显示 1  - 14 条   共 28 条\r\n\t页次:1 / 2 页    14 条/页'], 'total_page': 407, 'dt_list': ['序号', '考核日期', '考核结论', '考核机关', '考核结论截止日期', '暂无相关内容！'], 'prize_list': ['序号', '获奖名称', '获奖时间', '暂无相关内容！']}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/pipelines.py", line 47, in process_item
+    self.collection7.insert_one(dict(item))
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/collection.py", line 682, in insert_one
+    session=session),
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/collection.py", line 598, in _insert
+    bypass_doc_val, session)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/collection.py", line 578, in _insert_one
+    True, _insert_command, session)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/mongo_client.py", line 1098, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/usr/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/mongo_client.py", line 1404, in _tmp_session
+    s = self._ensure_session(session)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/mongo_client.py", line 1391, in _ensure_session
+    return self.start_session(causal_consistency=False)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/mongo_client.py", line 1369, in start_session
+    server_session = self._get_server_session()
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/mongo_client.py", line 1377, in _get_server_session
+    return self._topology.get_server_session()
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/topology.py", line 416, in get_server_session
+    None)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/topology.py", line 199, in _select_servers_loop
+    self._error_message(selector))
+pymongo.errors.ServerSelectionTimeoutError: 127.0.0.1:27017: [Errno 111] Connection refused
+2018-01-24 22:45:09 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/AqscList_1.aspx?ent_id=11692&cert_id=8c5a4f93-7375-47d9-a503-9811da48f368> (referer: http://jzsc.sxjs.gov.cn/Browse/AqscList.aspx)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 103, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-24 22:45:11 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/AqscList_1.aspx?ent_id=12035&cert_id=c048ab20-15d3-4fec-a3fe-c1eb3cf56395> (referer: http://jzsc.sxjs.gov.cn/Browse/AqscList.aspx)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 103, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-24 22:45:12 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/AqscList_1.aspx?ent_id=12439&cert_id=d60c550f-12dd-4c28-b896-23cea13d2be3> (referer: http://jzsc.sxjs.gov.cn/Browse/AqscList.aspx)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 103, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-24 22:45:13 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/AqscList_1.aspx?ent_id=11856&cert_id=6fdcd082-ad50-40ee-ad33-f1c7af804fdb> (referer: http://jzsc.sxjs.gov.cn/Browse/AqscList.aspx)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 103, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-24 22:45:14 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/AqscList_1.aspx?ent_id=12183&cert_id=39cb6ccb-defb-44ef-9014-943c1bc2553a> (referer: http://jzsc.sxjs.gov.cn/Browse/AqscList.aspx)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 103, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-24 22:45:15 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/AqscList_1.aspx?ent_id=15258&cert_id=93042e1c-6838-4bcc-8861-662fcc4d8779> (referer: http://jzsc.sxjs.gov.cn/Browse/AqscList.aspx)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 103, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-24 22:45:17 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/AqscList_1.aspx?ent_id=16005&cert_id=061dc366-a88d-448b-a5ad-7d4836eeeaad> (referer: http://jzsc.sxjs.gov.cn/Browse/AqscList.aspx)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 103, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-24 22:45:18 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/AqscList_1.aspx?ent_id=16144&cert_id=23cb6692-9a63-4309-b10c-899dc67f4eaf> (referer: http://jzsc.sxjs.gov.cn/Browse/AqscList.aspx)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 103, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-24 22:45:20 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/AqscList_1.aspx?ent_id=17092&cert_id=2a88586a-50de-4288-8d44-c9109f126ce9> (referer: http://jzsc.sxjs.gov.cn/Browse/AqscList.aspx)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 103, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-24 22:45:20 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/AqscList_1.aspx?ent_id=0ed83bc8-759d-4b4f-b552-e55ab30d4040&cert_id=ee39c13e-d79a-4f28-8f4d-3c425f3aa0c8> (referer: http://jzsc.sxjs.gov.cn/Browse/AqscList.aspx)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 103, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-24 22:45:22 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/AqscList_1.aspx?ent_id=4dfa589f-a6ec-40d6-88f7-e44872f369c5&cert_id=cc493270-ae5f-40d8-a57c-37a080c5bd8f> (referer: http://jzsc.sxjs.gov.cn/Browse/AqscList.aspx)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 103, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-24 22:45:23 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/AqscList_1.aspx?ent_id=8ca96471-900f-40ed-a442-746c7b6a4fed&cert_id=a4e55cad-8996-44b4-aabf-e751e8db3dae> (referer: http://jzsc.sxjs.gov.cn/Browse/AqscList.aspx)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 103, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-24 22:45:24 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/AqscList_1.aspx?ent_id=d0ea3170-36f4-40a3-b0cf-bf1b7837aaed&cert_id=8e5b0588-0fe2-4838-a230-6413e3815421> (referer: http://jzsc.sxjs.gov.cn/Browse/AqscList.aspx)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 103, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-24 22:45:26 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/AqscList_1.aspx?ent_id=12744&cert_id=790d73f9-ea4e-400f-9a6f-f7b1f74b98d6> (referer: http://jzsc.sxjs.gov.cn/Browse/AqscList.aspx)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 103, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-24 22:45:27 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/AqscList_1.aspx?ent_id=7a3982e9-a91b-4671-9c16-85c34389f8f3&cert_id=f77ce48b-93da-4b2e-807f-1ad34043af58> (referer: http://jzsc.sxjs.gov.cn/Browse/AqscList.aspx?page=2)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 103, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-24 22:45:28 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/AqscList_1.aspx?ent_id=09d68c76-e923-47b5-9780-050f0eafb25d&cert_id=556c76ef-235f-4736-9d4b-8594db5c652b> (referer: http://jzsc.sxjs.gov.cn/Browse/AqscList.aspx?page=2)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 103, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-24 22:45:30 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/AqscList_1.aspx?ent_id=501dd9a1-6a37-4351-bbb8-c3015219494f&cert_id=d0572d86-b158-4593-a3a2-9f57eb575029> (referer: http://jzsc.sxjs.gov.cn/Browse/AqscList.aspx?page=2)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 103, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-24 22:45:31 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/AqscList_1.aspx?ent_id=adc2f049-2bb4-4cdd-bc7a-c33e7937b581&cert_id=dcd1bd52-fa4f-4c4b-ab18-3240a4f5701d> (referer: http://jzsc.sxjs.gov.cn/Browse/AqscList.aspx?page=2)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 103, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-24 22:45:32 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/AqscList_1.aspx?ent_id=11995&cert_id=1b19a154-53c0-4356-a6cd-56599de9a565> (referer: http://jzsc.sxjs.gov.cn/Browse/AqscList.aspx?page=2)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 103, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-24 22:45:34 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/AqscList_1.aspx?ent_id=20594&cert_id=2fe5b397-fa1c-4e2f-8bb5-9e9e9f078ddf> (referer: http://jzsc.sxjs.gov.cn/Browse/AqscList.aspx?page=2)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 103, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-24 22:45:35 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/AqscList_1.aspx?ent_id=11710&cert_id=f85153da-1a05-44ba-ac97-e52b0d33e8bb> (referer: http://jzsc.sxjs.gov.cn/Browse/AqscList.aspx?page=2)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 103, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-24 22:45:37 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/AqscList_1.aspx?ent_id=12033&cert_id=67502745-ff7e-431c-86b9-5b6788ebc48f> (referer: http://jzsc.sxjs.gov.cn/Browse/AqscList.aspx?page=2)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 103, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-24 22:45:38 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/AqscList_1.aspx?ent_id=12777&cert_id=916f321a-b633-4760-9af8-6ab02aa1b0c2> (referer: http://jzsc.sxjs.gov.cn/Browse/AqscList.aspx?page=2)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 103, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-24 22:45:39 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/AqscList_1.aspx?ent_id=16966&cert_id=5d6c1028-2dc0-4e01-873e-c43f998d3fbb> (referer: http://jzsc.sxjs.gov.cn/Browse/AqscList.aspx?page=2)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 103, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-24 22:45:40 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/AqscList_1.aspx?ent_id=18108&cert_id=3d18d000-bb29-4c06-be91-5bc58f9d6709> (referer: http://jzsc.sxjs.gov.cn/Browse/AqscList.aspx?page=2)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 103, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-24 22:45:42 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/AqscList_1.aspx?ent_id=20868&cert_id=3e5f633a-9fa9-4448-8b95-472503ac4961> (referer: http://jzsc.sxjs.gov.cn/Browse/AqscList.aspx?page=2)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 103, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-24 22:45:43 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/AqscList_1.aspx?ent_id=b52438bc-aa40-487b-89dc-331fec4ae14f&cert_id=13e0217a-6987-42d4-b29a-d15055bc743f> (referer: http://jzsc.sxjs.gov.cn/Browse/AqscList.aspx?page=2)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 103, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-24 22:45:46 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/AqscList_1.aspx?ent_id=18039&cert_id=adda86c4-0dcc-4f3f-9827-dcc0b0aac312> (referer: http://jzsc.sxjs.gov.cn/Browse/AqscList.aspx?page=2)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 103, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-24 22:45:47 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/AqscList_1.aspx?ent_id=78c7a726-b693-4582-b65b-e1455489fa5e&cert_id=f1287b9c-bfe6-4d7d-a282-24c537c046d1> (referer: http://jzsc.sxjs.gov.cn/Browse/AqscList.aspx?page=3)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 103, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-24 22:45:48 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/AqscList_1.aspx?ent_id=c20b15e1-8488-4183-82b1-74cbc4ff48e2&cert_id=6569a7db-9de5-4263-9280-12c4d2dfbaad> (referer: http://jzsc.sxjs.gov.cn/Browse/AqscList.aspx?page=3)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 103, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-24 22:45:49 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/AqscList_1.aspx?ent_id=16538&cert_id=55540066-4d58-4390-af45-00eb23a7cbd9> (referer: http://jzsc.sxjs.gov.cn/Browse/AqscList.aspx?page=3)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 103, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-24 22:45:51 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/AqscList_1.aspx?ent_id=17971&cert_id=a34e4b40-1662-466e-8959-686099280992> (referer: http://jzsc.sxjs.gov.cn/Browse/AqscList.aspx?page=3)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 103, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-24 22:45:52 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/AqscList_1.aspx?ent_id=18044&cert_id=b05960fb-772c-4adb-887b-c4c360351912> (referer: http://jzsc.sxjs.gov.cn/Browse/AqscList.aspx?page=3)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 103, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-24 22:45:53 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/AqscList_1.aspx?ent_id=11734&cert_id=67d2ebbe-c014-441e-860c-e95fcd7f6eb8> (referer: http://jzsc.sxjs.gov.cn/Browse/AqscList.aspx?page=3)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 103, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-24 22:45:54 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/AqscList_1.aspx?ent_id=11743&cert_id=ec21b653-3969-45dc-bd96-fdd3adeca7b4> (referer: http://jzsc.sxjs.gov.cn/Browse/AqscList.aspx?page=3)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 103, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-24 22:45:56 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/AqscList_1.aspx?ent_id=11817&cert_id=0b3e145f-3088-482d-a9fe-3a209bbd85cd> (referer: http://jzsc.sxjs.gov.cn/Browse/AqscList.aspx?page=3)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 103, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-24 22:45:57 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/AqscList_1.aspx?ent_id=11828&cert_id=e6c294e0-6539-4d1e-8ad7-8614cf527b78> (referer: http://jzsc.sxjs.gov.cn/Browse/AqscList.aspx?page=3)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 103, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-24 22:45:58 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/AqscList_1.aspx?ent_id=11874&cert_id=4f153304-37ec-4d96-abba-39a0dab99ce6> (referer: http://jzsc.sxjs.gov.cn/Browse/AqscList.aspx?page=3)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 103, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-24 22:46:00 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/AqscList_1.aspx?ent_id=16615&cert_id=185e2368-7656-4dd6-bbdf-e510ed385afa> (referer: http://jzsc.sxjs.gov.cn/Browse/AqscList.aspx?page=3)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 103, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-24 22:46:02 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/AqscList_1.aspx?ent_id=11712&cert_id=9c152c59-979a-4829-929f-8725d5cb3e18> (referer: http://jzsc.sxjs.gov.cn/Browse/AqscList.aspx?page=3)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 103, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-24 22:46:03 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/AqscList_1.aspx?ent_id=11723&cert_id=95c5c322-b4b5-4416-98c2-a92bbf51dc66> (referer: http://jzsc.sxjs.gov.cn/Browse/AqscList.aspx?page=3)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 103, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-24 22:46:04 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/AqscList_1.aspx?ent_id=20411&cert_id=49e2a3f0-d100-4955-9785-16e60acb6c8b> (referer: http://jzsc.sxjs.gov.cn/Browse/AqscList.aspx?page=3)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 103, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-24 22:46:05 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/AqscList_1.aspx?ent_id=12228&cert_id=a2e1fc7e-675a-41c2-b48c-c66944e74aa7> (referer: http://jzsc.sxjs.gov.cn/Browse/AqscList.aspx?page=4)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 103, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-24 22:46:06 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/AqscList_1.aspx?ent_id=17203&cert_id=eada53f5-3058-44a2-8b40-b550d9995140> (referer: http://jzsc.sxjs.gov.cn/Browse/AqscList.aspx?page=4)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 103, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-24 22:46:08 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/AqscList_1.aspx?ent_id=11727&cert_id=537e86e6-691c-40f4-8723-354b7901520d> (referer: http://jzsc.sxjs.gov.cn/Browse/AqscList.aspx?page=4)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 103, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-24 22:46:09 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/AqscList_1.aspx?ent_id=11982&cert_id=e77431a9-d521-4dee-ae86-eb72ccf54c99> (referer: http://jzsc.sxjs.gov.cn/Browse/AqscList.aspx?page=4)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 103, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-24 23:30:24 [scrapy.core.scraper] ERROR: Error downloading <GET http://jzsc.sxjs.gov.cn/Browse/AqscList_1.aspx?ent_id=d0987799-c78c-4e13-ae2e-302f613ffb75&cert_id=03eeea58-f9ac-4e1c-a062-752f2bf2530d>: Connection was refused by other side: 111: Connection refused.
+2018-01-24 23:30:30 [scrapy.core.scraper] ERROR: Error downloading <GET http://jzsc.sxjs.gov.cn/Browse/AqscList_1.aspx?ent_id=14655&cert_id=460f8f06-c641-4082-a094-ff649e023462>: Connection was refused by other side: 111: Connection refused.
+2018-01-24 23:30:31 [scrapy.core.scraper] ERROR: Error downloading <GET http://jzsc.sxjs.gov.cn/Browse/AqscList.aspx?page=124>: Connection was refused by other side: 111: Connection refused.
+2018-01-24 23:31:46 [scrapy.core.scraper] ERROR: Error downloading <GET http://jzsc.sxjs.gov.cn/Browse/AqscList_1.aspx?ent_id=16730&cert_id=830943a8-5305-4e8a-b99e-7950d66933a1>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/twisted/internet/defer.py", line 1384, in _inlineCallbacks
+    result = result.throwExceptionIntoGenerator(g)
+  File "/usr/local/lib/python3.5/dist-packages/twisted/python/failure.py", line 408, in throwExceptionIntoGenerator
+    return g.throw(self.type, self.value, self.tb)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/core/downloader/middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+  File "/usr/local/lib/python3.5/dist-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/core/downloader/handlers/http11.py", line 320, in _cb_timeout
+    raise TimeoutError("Getting %s took longer than %s seconds." % (url, timeout))
+twisted.internet.error.TimeoutError: User timeout caused connection failure: Getting http://jzsc.sxjs.gov.cn/Browse/AqscList_1.aspx?ent_id=16730&cert_id=830943a8-5305-4e8a-b99e-7950d66933a1 took longer than 100.0 seconds..
+2018-01-24 23:32:04 [scrapy.core.scraper] ERROR: Error downloading <GET http://jzsc.sxjs.gov.cn/Browse/AqscList_1.aspx?ent_id=7fb87223-26a2-4651-956c-ad77331d883d&cert_id=384cf53a-495e-4d40-99a0-28003ab46688>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/twisted/internet/defer.py", line 1384, in _inlineCallbacks
+    result = result.throwExceptionIntoGenerator(g)
+  File "/usr/local/lib/python3.5/dist-packages/twisted/python/failure.py", line 408, in throwExceptionIntoGenerator
+    return g.throw(self.type, self.value, self.tb)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/core/downloader/middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+  File "/usr/local/lib/python3.5/dist-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/core/downloader/handlers/http11.py", line 320, in _cb_timeout
+    raise TimeoutError("Getting %s took longer than %s seconds." % (url, timeout))
+twisted.internet.error.TimeoutError: User timeout caused connection failure: Getting http://jzsc.sxjs.gov.cn/Browse/AqscList_1.aspx?ent_id=7fb87223-26a2-4651-956c-ad77331d883d&cert_id=384cf53a-495e-4d40-99a0-28003ab46688 took longer than 100.0 seconds..
+2018-01-24 23:32:09 [scrapy.core.scraper] ERROR: Error downloading <GET http://jzsc.sxjs.gov.cn/Browse/AqscList_1.aspx?ent_id=88582e27-24e6-4ad2-b1a9-2a03fb26fcf9&cert_id=7c7c027c-5bec-478f-b970-b06fd5209c67>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/twisted/internet/defer.py", line 1384, in _inlineCallbacks
+    result = result.throwExceptionIntoGenerator(g)
+  File "/usr/local/lib/python3.5/dist-packages/twisted/python/failure.py", line 408, in throwExceptionIntoGenerator
+    return g.throw(self.type, self.value, self.tb)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/core/downloader/middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+  File "/usr/local/lib/python3.5/dist-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/core/downloader/handlers/http11.py", line 320, in _cb_timeout
+    raise TimeoutError("Getting %s took longer than %s seconds." % (url, timeout))
+twisted.internet.error.TimeoutError: User timeout caused connection failure: Getting http://jzsc.sxjs.gov.cn/Browse/AqscList_1.aspx?ent_id=88582e27-24e6-4ad2-b1a9-2a03fb26fcf9&cert_id=7c7c027c-5bec-478f-b970-b06fd5209c67 took longer than 100.0 seconds..
+2018-01-24 23:32:10 [scrapy.core.scraper] ERROR: Error downloading <GET http://jzsc.sxjs.gov.cn/Browse/AqscList_1.aspx?ent_id=8c34ec7a-36ba-4417-8fa6-4c58560155aa&cert_id=50c54d49-2863-41e7-8318-f5cf19cc647e>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/twisted/internet/defer.py", line 1384, in _inlineCallbacks
+    result = result.throwExceptionIntoGenerator(g)
+  File "/usr/local/lib/python3.5/dist-packages/twisted/python/failure.py", line 408, in throwExceptionIntoGenerator
+    return g.throw(self.type, self.value, self.tb)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/core/downloader/middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+  File "/usr/local/lib/python3.5/dist-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/core/downloader/handlers/http11.py", line 320, in _cb_timeout
+    raise TimeoutError("Getting %s took longer than %s seconds." % (url, timeout))
+twisted.internet.error.TimeoutError: User timeout caused connection failure: Getting http://jzsc.sxjs.gov.cn/Browse/AqscList_1.aspx?ent_id=8c34ec7a-36ba-4417-8fa6-4c58560155aa&cert_id=50c54d49-2863-41e7-8318-f5cf19cc647e took longer than 100.0 seconds..
+2018-01-24 23:32:11 [scrapy.core.scraper] ERROR: Error downloading <GET http://jzsc.sxjs.gov.cn/Browse/AqscList_1.aspx?ent_id=901a2059-c0c8-46ee-8b40-13f4567a35a9&cert_id=32aeba15-c462-4eb3-9698-95c405d50d98>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/twisted/internet/defer.py", line 1384, in _inlineCallbacks
+    result = result.throwExceptionIntoGenerator(g)
+  File "/usr/local/lib/python3.5/dist-packages/twisted/python/failure.py", line 408, in throwExceptionIntoGenerator
+    return g.throw(self.type, self.value, self.tb)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/core/downloader/middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+  File "/usr/local/lib/python3.5/dist-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/core/downloader/handlers/http11.py", line 320, in _cb_timeout
+    raise TimeoutError("Getting %s took longer than %s seconds." % (url, timeout))
+twisted.internet.error.TimeoutError: User timeout caused connection failure: Getting http://jzsc.sxjs.gov.cn/Browse/AqscList_1.aspx?ent_id=901a2059-c0c8-46ee-8b40-13f4567a35a9&cert_id=32aeba15-c462-4eb3-9698-95c405d50d98 took longer than 100.0 seconds..
+2018-01-25 08:55:54 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/GcjlList_1.aspx?ent_id=2f5ddf31-e18e-45ff-b257-98a896b64be9&cert_id=95a00945-16ab-47e8-ae6f-33ab0983998e> (referer: http://jzsc.sxjs.gov.cn/Browse/GcjlList.aspx)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 102, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-25 08:55:55 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/GcjlList_1.aspx?ent_id=302f1f45-5420-4082-b29d-9a4c1990d297&cert_id=26e83c8e-80cf-46f2-8489-3450e93da2cc> (referer: http://jzsc.sxjs.gov.cn/Browse/GcjlList.aspx)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 102, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-25 08:55:57 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/GcjlList_1.aspx?ent_id=324abc18-c427-4afd-ad87-12e407049311&cert_id=9febdbc4-ef08-4a78-9b7b-a0d2a24809f5> (referer: http://jzsc.sxjs.gov.cn/Browse/GcjlList.aspx)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 102, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-25 08:55:58 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/GcjlList_1.aspx?ent_id=bab87c5b-3db4-4e7e-89eb-cffbcb8c33e4&cert_id=9a378cdc-2d67-428c-a4b8-69b93c6cb5d6> (referer: http://jzsc.sxjs.gov.cn/Browse/GcjlList.aspx)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 102, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-25 08:56:00 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/GcjlList_1.aspx?ent_id=f1e581c0-9a1d-45ec-a0e1-0b71518d5ee7&cert_id=f04c8653-6329-4b04-a0c7-0cfa337f22b0> (referer: http://jzsc.sxjs.gov.cn/Browse/GcjlList.aspx)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 102, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-25 08:56:02 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/GcjlList_1.aspx?ent_id=7cfe301b-79bf-460d-9019-7c773b253500&cert_id=1355745d-d1d9-4564-9da8-772495f04733> (referer: http://jzsc.sxjs.gov.cn/Browse/GcjlList.aspx)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 102, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-25 08:56:02 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/GcjlList_1.aspx?ent_id=7cfe301b-79bf-460d-9019-7c773b253500&cert_id=93d9cc32-ba65-4fda-8325-4379eb9572d5> (referer: http://jzsc.sxjs.gov.cn/Browse/GcjlList.aspx)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 102, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-25 08:56:05 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/GcjlList_1.aspx?ent_id=82e3c069-0a8b-4981-b9bd-e8fbc649e812&cert_id=c6d17839-4e80-4f86-b3fb-d034228a4cda> (referer: http://jzsc.sxjs.gov.cn/Browse/GcjlList.aspx)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 102, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-25 08:56:05 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/GcjlList_1.aspx?ent_id=82e3c069-0a8b-4981-b9bd-e8fbc649e812&cert_id=ed42824b-886c-42f7-8d4d-5b352d1b7fb1> (referer: http://jzsc.sxjs.gov.cn/Browse/GcjlList.aspx)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 102, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-25 08:56:06 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/GcjlList_1.aspx?ent_id=988c5d2c-0f64-4ced-9409-101a669a63e5&cert_id=281b97d8-8260-4a4b-9ad1-2b6295362463> (referer: http://jzsc.sxjs.gov.cn/Browse/GcjlList.aspx)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 102, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-25 08:56:08 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/GcjlList_1.aspx?ent_id=a796d589-7d78-40ff-9614-8b78c095ca67&cert_id=8e58b4ca-0b5d-474c-8bb7-cb722c94ad60> (referer: http://jzsc.sxjs.gov.cn/Browse/GcjlList.aspx)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 102, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-25 08:56:09 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/GcjlList_1.aspx?ent_id=bab87c5b-3db4-4e7e-89eb-cffbcb8c33e4&cert_id=ee6b339f-e8af-46a4-b302-0fdb08cc8613> (referer: http://jzsc.sxjs.gov.cn/Browse/GcjlList.aspx)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 102, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-25 08:56:10 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/GcjlList_1.aspx?ent_id=fcc83742-f365-42c8-a9a6-055fec3f7d92&cert_id=84411c6b-1799-48b5-af6c-28f44f110f68> (referer: http://jzsc.sxjs.gov.cn/Browse/GcjlList.aspx)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 102, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-25 08:56:11 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/GcjlList_1.aspx?ent_id=c45a4c13-d416-403a-96eb-e63aec54fa4d&cert_id=929c50af-d5f6-43af-9b7a-9b05c785c774> (referer: http://jzsc.sxjs.gov.cn/Browse/GcjlList.aspx)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 102, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-25 08:56:14 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/GcjlList_1.aspx?ent_id=87773a1b-c95b-4e53-aeee-f4b93b779ade&cert_id=ac55cb24-1186-4b97-9847-c00aa5807680> (referer: http://jzsc.sxjs.gov.cn/Browse/GcjlList.aspx?page=2)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 102, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-25 08:56:15 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/GcjlList_1.aspx?ent_id=9669757c-ede7-4f55-9274-4ec395510c2c&cert_id=a8060ac3-d7bc-4b3b-8d21-7fc8b18724eb> (referer: http://jzsc.sxjs.gov.cn/Browse/GcjlList.aspx?page=2)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 102, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-25 08:56:17 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/GcjlList_1.aspx?ent_id=d8bb73d8-85df-48f4-8ec9-c15d128dd038&cert_id=9df00b5d-dab8-40c1-9896-6243c2166403> (referer: http://jzsc.sxjs.gov.cn/Browse/GcjlList.aspx?page=2)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 102, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-25 08:56:18 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/GcjlList_1.aspx?ent_id=5a2a5992-6ab2-4120-b050-de277c521f94&cert_id=689ed5a5-44d2-4803-aa3d-1569dde82e2b> (referer: http://jzsc.sxjs.gov.cn/Browse/GcjlList.aspx?page=2)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 102, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-25 08:56:20 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/GcjlList_1.aspx?ent_id=84f20c1a-cac4-45cc-ab83-3fa009100af9&cert_id=10ce945c-974b-4e51-afc5-9c006e17a9ae> (referer: http://jzsc.sxjs.gov.cn/Browse/GcjlList.aspx?page=2)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 102, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-25 08:56:21 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/GcjlList_1.aspx?ent_id=adef3265-8bce-436b-8f1a-819aff7bb90d&cert_id=53e9fe72-79c1-480e-9c31-f33bf09957e2> (referer: http://jzsc.sxjs.gov.cn/Browse/GcjlList.aspx?page=2)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 102, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-25 08:56:22 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/GcjlList_1.aspx?ent_id=84f20c1a-cac4-45cc-ab83-3fa009100af9&cert_id=d6859457-b736-40d8-88cf-dc031f1890a1> (referer: http://jzsc.sxjs.gov.cn/Browse/GcjlList.aspx?page=2)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 102, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-25 08:56:23 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/GcjlList_1.aspx?ent_id=adef3265-8bce-436b-8f1a-819aff7bb90d&cert_id=d0bb7c20-49f8-4b49-ba83-e032694bd497> (referer: http://jzsc.sxjs.gov.cn/Browse/GcjlList.aspx?page=2)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 102, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-25 08:56:25 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/GcjlList_1.aspx?ent_id=e3670331-5f75-4c36-8155-68033505478b&cert_id=5d2520cb-4e08-4e53-b5eb-53ea73645f6b> (referer: http://jzsc.sxjs.gov.cn/Browse/GcjlList.aspx?page=2)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 102, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range
+2018-01-25 08:56:26 [scrapy.core.scraper] ERROR: Spider error processing <GET http://jzsc.sxjs.gov.cn/Browse/GcjlList_1.aspx?ent_id=136c5b4b-9500-4386-86e9-16378f4e164b&cert_id=3ff3370e-9de2-42c8-b9bf-c2c463d8aefe> (referer: http://jzsc.sxjs.gov.cn/Browse/GcjlList.aspx?page=2)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/python/Desktop/爬虫/pro_jz-1-19/pro_jz/spiders/sx_jz.py", line 102, in main_parse
+    if list_pro[-1] != '暂无相关内容！':
+IndexError: list index out of range

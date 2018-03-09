@@ -1,0 +1,627 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="ctl00_Head1"><title>
+	单位信息查看
+</title>
+<script src="/zjthy/WebResource.axd?d=02BlXIZL_5yLA73iZN3xvaGrOYg9q2C3a1Jv3XAM0XISBBTFCAefjI9mDhm3DAsn8iea2swT7zdHQYQ4wEQjU1Ey7fHq1i0tqNtJDkMsDdDnR_w2vmuNG7mPOJlXErotzxMFw2jNI7ThFB4lWDII76wGDMZXRwbn-ab8esMaExFz7PZO0&t=636307138816087800" type="text/javascript" SourceControl="EpointCommon" ></script> 
+
+<script src="/zjthy/WebResource.axd?d=WtjUB3SFERR6rNugk4xb3nBzLuR08W_QOoExPzbx3wKADGBJvJhBXhun1cvPNrJecekZKNrn1Z3UbqRQ6vG7xBxTcZI6SDR1YgrhCFYNyWdKdZVT9aee6SwcqVGBM_-wfhkkjaGVxGP7JHsqSXUFm4O9aGXT8YTxfkqRWxi8bxnvVmrs0&t=636307138816087800" type="text/javascript" SourceControl="EpointButton" ></script> 
+<link href="../../../App_Themes/EpointWebnew/Css.css" type="text/css" rel="stylesheet" /><link href="../../../App_Themes/EpointWebnew/registeruser.css" type="text/css" rel="stylesheet" />
+<script src="/zjthy/WebResource.axd?d=WqpxaOvOvLLXvvA5veBQ5FI41N41TUJRDBRZBRP9JD-e7Nqw4KxV0IMNDt9x3iDgmZoXS3KGsa6LF_K63azJpHt3K4MQ6JBdcZ5Jv3HWPVhmvTryWHK_qVUhVOdkP_m1Ts7hanutocY14RNsyDjp7414pr7u1t0lf5UQQzbgMWKQA4gP0&t=636307138816087800" type="text/javascript" SourceControl="TextBox" ></script> 
+</head>
+<body class="PageBg">
+    <form method="post" action="./DanWeiInfoChange_List2.aspx" onsubmit="javascript:return WebForm_OnSubmit();" id="aspnetForm" enctype="multipart/form-data">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTM3NTEzMTkyMw8WBh4KRGFuV2VpVHlwZWQeEFVzZXJLZXlfUGFnZUxvYWRlHg5TZXJ2ZXJUaW1lU3BhbgeXkA96NjNvQBYCZg9kFgICAw9kFggCBQ8WAh4EVGV4dAUS5Y2V5L2N5L+h5oGv5p+l55yLZAIJDxYEHwMFpAE8c3BhbiBpZD1zcGFuUmV0dXJuIGNsYXNzPSJSZXR1cm5PdXQiICBvbm1vdXNlb3Zlcj0idGhpcy5jbGFzc05hbWU9J1JldHVybk92ZXInIiBvbm1vdXNlb3V0PSJ0aGlzLmNsYXNzTmFtZT0nUmV0dXJuT3V0JyIgb25jbGljaz0namF2YXNjcmlwdDpoaXN0b3J5LmdvKC0xKSc+PC9zcGFuPh4HVmlzaWJsZWhkAgsPFgIfAwWkATxzcGFuIGlkPSJTcGFuX2Nsb3NlIiBjbGFzcz0iQ2xvc2VPdXQiICBvbm1vdXNlb3Zlcj0idGhpcy5jbGFzc05hbWU9J0Nsb3NlT3ZlciciIG9uY2xpY2s9J2phdmFzY3JpcHQ6d2luZG93LmNsb3NlKCk7JyBvbm1vdXNlb3V0PSJ0aGlzLmNsYXNzTmFtZT0nQ2xvc2VPdXQnIj48L3NwYW4+ZAIND2QWAgIBD2QWAmYPZBYGAgQPZBYCAgMPZBYCZg9kFgQCAQ9kFgICAQ8QDxYGHg1EYXRhVGV4dEZpZWxkBQhDaXR5TmFtZR4ORGF0YVZhbHVlRmllbGQFCENpdHlDb2RlHgtfIURhdGFCb3VuZGdkEBUQCeivt+mAieaLqQbljLrlpJYJ5Y2X5a6B5biCCeafs+W3nuW4ggnmoYLmnpfluIIJ5qKn5bee5biCCeWMl+a1t+W4ggzpmLLln47muK/luIIJ6ZKm5bee5biCCei0tea4r+W4ggnnjonmnpfluIIJ55m+6Imy5biCCei0uuW3nuW4ggnmsrPmsaDluIIJ5p2l5a6+5biCCeW0h+W3puW4ghUQAAExBjQ1MDEwMAY0NTAyMDAGNDUwMzAwBjQ1MDQwMAY0NTA1MDAGNDUwNjAwBjQ1MDcwMAY0NTA4MDAGNDUwOTAwBjQ1MTAwMAY0NTExMDAGNDUxMjAwBjQ1MTMwMAY0NTE0MDAUKwMQZ2dnZ2dnZ2dnZ2dnZ2dnZ2RkAgMPZBYCAgEPEA8WBh8FBQhJdGVtVGV4dB8GBQlJdGVtVmFsdWUfB2dkEBULBuaJgOaciQzmo4DmtYvmnLrmnoQM5oub5qCH5Luj55CGDOaWveW3peWNleS9jQznm5HnkIbljZXkvY0M5bu66K6+5Y2V5L2NDOWLmOWvn+WNleS9jQzorr7orqHljZXkvY0P5oi/5Zyw5Lqn5LyB5LiaEuaWveW3peWbvuWuoeacuuaehAzlm63mnpfljZXkvY0VCwACMTkCMTgCMTMCMTQCMTECMTUCMTYCNTICNDICMjAUKwMLZ2dnZ2dnZ2dnZ2dkZAIKDw8WBB4OQ3VzdG9tSW5mb1RleHQFlAHorrDlvZXmgLvmlbDvvJo8Zm9udCBjb2xvcj0iYmx1ZSI+PGI+MTM5MDU8L2I+PC9mb250PiDmgLvpobXmlbDvvJo8Zm9udCBjb2xvcj0iYmx1ZSI+PGI+Njk2PC9iPjwvZm9udD4g5b2T5YmN6aG177yaPGZvbnQgY29sb3I9InJlZCI+PGI+MTwvYj48L2ZvbnQ+HgtSZWNvcmRjb3VudALRbGRkAgwPPCsACwEADxYIHghEYXRhS2V5cxYUBSQwMDA1YWZhOC03NDA1LTQxNTQtYjdlMC02ZmU2ZTFiOTgwMDQFJDMxNmM4NjBiLTg1ZmYtNDkwYy1hYzc5LWE4NGIyZjVmNGFkZgUkMDAxMzg2ZDMtMmM1My00YWRiLWIzYWMtMDI5YzdlMTJjM2M4BSQwMDE1RUU1OC03QTBBLTREQjAtODRFQS0zQUIxNjBDM0VGNEMFJGFhMmE2YTRiLTA1MzctNGYzMC1hZDM4LWY5MmRiN2VjMzJjZQUkZmUzMThiY2MtMmQzNy00M2JiLTg2OWItMmQwZjJmMmRhNzVkBSQ3ZmRlN2FkMS00ZjI1LTRiZmQtYjBkMy02NTg2ZjFhMGFkMGMFJDAwMmQ4ZTBlLTJmZjMtNGU1MS05YzE0LTU3YmUwYTlmYjAyNQUkYTc5Y2QxZjMtNGIyZC00NDViLTg4YTUtZmZkODYwNGVmNjcwBSQwMDdDMEY1QS1FMkFFLTQwNUItODg3NS1CRUQyRjc5REJGQTAFJDAwYmE4NjFkLWQyYzQtNDIwZi1iNWEwLWY0M2NhOGY1ZDI5NAUkZDI4MmQwMzEtYzE4Yy00MDYyLWIyMWQtYzZlNGM4MDY2Y2FlBSRFRjM3MTRFRi1CNTZGLTQ3MDYtQjk5NC04RjU3RUE5MTI0NDIFJDBkMzA1NTkxLTg1ZGMtNDI4Yi04MDdkLWZjYjgwMmMzZTRiNQUkN2ZkNjllOGUtYjViYS00YTJmLWEwMjEtZWZiZTcyNDhiNWU3BSQwRDQ5QjQ5My1DQkIwLTQ1QzQtQTY1Qi0xOUQzMzdERTJDMkIFJDBEQzM5QTQ5LTE3NjctNDkyMS1BMTlFLUIxMUFBNDMwQzQ1QwUkMEREMzREREUtOEMyMC00NjE3LTgyRjYtRkNEN0Q1MEM2OEU0BSQwZGY2OGYwYS0yYjI1LTQ3MjYtODI1Yi02NDkzZmRmNzBiY2QFJDBlMjlmZGQ3LWQzM2MtNGVkYi04ZmEyLTQxN2IyOTdmYzJmYR4LXyFJdGVtQ291bnQCFB4VXyFEYXRhU291cmNlSXRlbUNvdW50AhQeCVBhZ2VDb3VudAIBZBYCZg9kFigCAg9kFggCAQ9kFgJmDxUDJDAwMDVhZmE4LTc0MDUtNDE1NC1iN2UwLTZmZTZlMWI5ODAwNAIxMyTljZflroHpk63ogZToo4XppbDlt6XnqIvmnInpmZDlhazlj7hkAgIPZBYCZg8VAQBkAgMPZBYCZg8VAQ3mlr3lt6XljZXkvY07ZAIED2QWAmYPFQIkMDAwNWFmYTgtNzQwNS00MTU0LWI3ZTAtNmZlNmUxYjk4MDA0AjEzZAIDD2QWCAIBD2QWAmYPFQMkMzE2Yzg2MGItODVmZi00OTBjLWFjNzktYTg0YjJmNWY0YWRmAjEzEDgyNTg3QTJFQzhENjEwMDVkAgIPZBYCZg8VAQBkAgMPZBYCZg8VAQ3mlr3lt6XljZXkvY07ZAIED2QWAmYPFQIkMzE2Yzg2MGItODVmZi00OTBjLWFjNzktYTg0YjJmNWY0YWRmAjEzZAIED2QWCAIBD2QWAmYPFQMkMDAxMzg2ZDMtMmM1My00YWRiLWIzYWMtMDI5YzdlMTJjM2M4AjEzJ+W5v+ilv+mbhue+jue7hOiuvuiuoeW3peeoi+aciemZkOWFrOWPuGQCAg9kFgJmDxUBAGQCAw9kFgJmDxUBDeaWveW3peWNleS9jTtkAgQPZBYCZg8VAiQwMDEzODZkMy0yYzUzLTRhZGItYjNhYy0wMjljN2UxMmMzYzgCMTNkAgUPZBYIAgEPZBYCZg8VAyQwMDE1RUU1OC03QTBBLTREQjAtODRFQS0zQUIxNjBDM0VGNEMCMTMq5Y2X5a6B5biC6IGa576O5aCC6KOF6aWw5bel56iL5pyJ6ZmQ5YWs5Y+4ZAICD2QWAmYPFQEAZAIDD2QWAmYPFQEN5pa95bel5Y2V5L2NO2QCBA9kFgJmDxUCJDAwMTVFRTU4LTdBMEEtNERCMC04NEVBLTNBQjE2MEMzRUY0QwIxM2QCBg9kFggCAQ9kFgJmDxUDJGFhMmE2YTRiLTA1MzctNGYzMC1hZDM4LWY5MmRiN2VjMzJjZQIxMx7kuK3mib/lm73pmYXlt6XnqIvmnInpmZDlhazlj7hkAgIPZBYCZg8VASLmsZ/opb/nnIHCt+WNl+aYjOW4gsK36Z2S5LqR6LCx5Yy6ZAIDD2QWAmYPFQEN5pa95bel5Y2V5L2NO2QCBA9kFgJmDxUCJGFhMmE2YTRiLTA1MzctNGYzMC1hZDM4LWY5MmRiN2VjMzJjZQIxM2QCBw9kFggCAQ9kFgJmDxUDJGZlMzE4YmNjLTJkMzctNDNiYi04NjliLTJkMGYyZjJkYTc1ZAIxMxA4MjU4N0ExOEYxMEU0RjA3ZAICD2QWAmYPFQEAZAIDD2QWAmYPFQEN5pa95bel5Y2V5L2NO2QCBA9kFgJmDxUCJGZlMzE4YmNjLTJkMzctNDNiYi04NjliLTJkMGYyZjJkYTc1ZAIxM2QCCA9kFggCAQ9kFgJmDxUDJDdmZGU3YWQxLTRmMjUtNGJmZC1iMGQzLTY1ODZmMWEwYWQwYwIxMyTmrabmsYnlro/nm5vlu7rnrZHlronoo4XmnInpmZDlhazlj7hkAgIPZBYCZg8VAQBkAgMPZBYCZg8VAQ3mlr3lt6XljZXkvY07ZAIED2QWAmYPFQIkN2ZkZTdhZDEtNGYyNS00YmZkLWIwZDMtNjU4NmYxYTBhZDBjAjEzZAIJD2QWCAIBD2QWAmYPFQMkMDAyZDhlMGUtMmZmMy00ZTUxLTljMTQtNTdiZTBhOWZiMDI1AjEzJOafs+W3nuS4reiBlOijhemlsOW3peeoi+aciemZkOWFrOWPuGQCAg9kFgJmDxUBAGQCAw9kFgJmDxUBDeaWveW3peWNleS9jTtkAgQPZBYCZg8VAiQwMDJkOGUwZS0yZmYzLTRlNTEtOWMxNC01N2JlMGE5ZmIwMjUCMTNkAgoPZBYIAgEPZBYCZg8VAyRhNzljZDFmMy00YjJkLTQ0NWItODhhNS1mZmQ4NjA0ZWY2NzACMTMe5bm/6KW/55Ge5rOw5bu66K6+5pyJ6ZmQ5YWs5Y+4ZAICD2QWAmYPFQEr5bm/6KW/5aOu5peP6Ieq5rK75Yy6wrfnjonmnpfluILCt+eOieW3nuWMumQCAw9kFgJmDxUBDeaWveW3peWNleS9jTtkAgQPZBYCZg8VAiRhNzljZDFmMy00YjJkLTQ0NWItODhhNS1mZmQ4NjA0ZWY2NzACMTNkAgsPZBYIAgEPZBYCZg8VAyQwMDdDMEY1QS1FMkFFLTQwNUItODg3NS1CRUQyRjc5REJGQTACMTMt5Y2X5a6B5biC5rex5riv6KOF6aWw5bel56iL5pyJ6ZmQ6LSj5Lu75YWs5Y+4ZAICD2QWAmYPFQEAZAIDD2QWAmYPFQEN5pa95bel5Y2V5L2NO2QCBA9kFgJmDxUCJDAwN0MwRjVBLUUyQUUtNDA1Qi04ODc1LUJFRDJGNzlEQkZBMAIxM2QCDA9kFggCAQ9kFgJmDxUDJDAwYmE4NjFkLWQyYzQtNDIwZi1iNWEwLWY0M2NhOGY1ZDI5NAIxMyflub/opb/lubPmnpzlpKnljqbmt7flh53lnJ/mnInpmZDlhazlj7hkAgIPZBYCZg8VAQBkAgMPZBYCZg8VAQ3mlr3lt6XljZXkvY07ZAIED2QWAmYPFQIkMDBiYTg2MWQtZDJjNC00MjBmLWI1YTAtZjQzY2E4ZjVkMjk0AjEzZAIND2QWCAIBD2QWAmYPFQMkZDI4MmQwMzEtYzE4Yy00MDYyLWIyMWQtYzZlNGM4MDY2Y2FlAjEzJOW5v+ilv+mYs+WFieW7uuetkeW3peeoi+aciemZkOWFrOWPuGQCAg9kFgJmDxUBK+W5v+ilv+WjruaXj+iHquayu+WMusK35Y2X5a6B5biCwrfpnZLnp4DljLpkAgMPZBYCZg8VAQ3mlr3lt6XljZXkvY07ZAIED2QWAmYPFQIkZDI4MmQwMzEtYzE4Yy00MDYyLWIyMWQtYzZlNGM4MDY2Y2FlAjEzZAIOD2QWCAIBD2QWAmYPFQMkRUYzNzE0RUYtQjU2Ri00NzA2LUI5OTQtOEY1N0VBOTEyNDQyAjEzG+eBjOmYs+WOv+esrOS6jOW7uuetkeWFrOWPuGQCAg9kFgJmDxUBK+W5v+ilv+WjruaXj+iHquayu+WMusK35qGC5p6X5biCwrfngYzpmLPljr9kAgMPZBYCZg8VAQ3mlr3lt6XljZXkvY07ZAIED2QWAmYPFQIkRUYzNzE0RUYtQjU2Ri00NzA2LUI5OTQtOEY1N0VBOTEyNDQyAjEzZAIPD2QWCAIBD2QWAmYPFQMkMGQzMDU1OTEtODVkYy00MjhiLTgwN2QtZmNiODAyYzNlNGI1AjEzLeWNl+WugeW4gumTtuWHr+W7uuetkeijhemlsOaciemZkOi0o+S7u+WFrOWPuGQCAg9kFgJmDxUBAGQCAw9kFgJmDxUBDeaWveW3peWNleS9jTtkAgQPZBYCZg8VAiQwZDMwNTU5MS04NWRjLTQyOGItODA3ZC1mY2I4MDJjM2U0YjUCMTNkAhAPZBYIAgEPZBYCZg8VAyQ3ZmQ2OWU4ZS1iNWJhLTRhMmYtYTAyMS1lZmJlNzI0OGI1ZTcCMTMt5LiK6aW25biC5bm/5L+h5Zut5p6X57u/5YyW5bel56iL5pyJ6ZmQ5YWs5Y+4ZAICD2QWAmYPFQEf5rGf6KW/55yBwrfkuIrppbbluILCt+S/oeW3nuWMumQCAw9kFgJmDxUBDeaWveW3peWNleS9jTtkAgQPZBYCZg8VAiQ3ZmQ2OWU4ZS1iNWJhLTRhMmYtYTAyMS1lZmJlNzI0OGI1ZTcCMTNkAhEPZBYIAgEPZBYCZg8VAyQwRDQ5QjQ5My1DQkIwLTQ1QzQtQTY1Qi0xOUQzMzdERTJDMkICMTMh5Y2a55m95Y6/5bu6562R5bel56iL6KOF6aWw5YWs5Y+4ZAICD2QWAmYPFQEAZAIDD2QWAmYPFQEN5pa95bel5Y2V5L2NO2QCBA9kFgJmDxUCJDBENDlCNDkzLUNCQjAtNDVDNC1BNjVCLTE5RDMzN0RFMkMyQgIxM2QCEg9kFggCAQ9kFgJmDxUDJDBEQzM5QTQ5LTE3NjctNDkyMS1BMTlFLUIxMUFBNDMwQzQ1QwIxMyfljZflroHlronkv53kv6Hns7vnu5/lt6XnqIvmnInpmZDlhazlj7hkAgIPZBYCZg8VAQBkAgMPZBYCZg8VAQ3mlr3lt6XljZXkvY07ZAIED2QWAmYPFQIkMERDMzlBNDktMTc2Ny00OTIxLUExOUUtQjExQUE0MzBDNDVDAjEzZAITD2QWCAIBD2QWAmYPFQMkMEREMzREREUtOEMyMC00NjE3LTgyRjYtRkNEN0Q1MEM2OEU0AjEzJ+WNl+WugeiFvuWugeWVhuWTgea3t+WHneWcn+aciemZkOWFrOWPuGQCAg9kFgJmDxUBAGQCAw9kFgJmDxUBDeaWveW3peWNleS9jTtkAgQPZBYCZg8VAiQwREQzNERERS04QzIwLTQ2MTctODJGNi1GQ0Q3RDUwQzY4RTQCMTNkAhQPZBYIAgEPZBYCZg8VAyQwZGY2OGYwYS0yYjI1LTQ3MjYtODI1Yi02NDkzZmRmNzBiY2QCMTMn5Y2X5a6B5biC6auY56Wl5LuT5YKo5pyJ6ZmQ6LSj5Lu75YWs5Y+4ZAICD2QWAmYPFQEAZAIDD2QWAmYPFQEN5pa95bel5Y2V5L2NO2QCBA9kFgJmDxUCJDBkZjY4ZjBhLTJiMjUtNDcyNi04MjViLTY0OTNmZGY3MGJjZAIxM2QCFQ9kFggCAQ9kFgJmDxUDJDBlMjlmZGQ3LWQzM2MtNGVkYi04ZmEyLTQxN2IyOTdmYzJmYQIxMy3ljZflroHluILnmb7kuqjlu7rnrZHlirPliqHliIbljIXmnInpmZDlhazlj7hkAgIPZBYCZg8VAQBkAgMPZBYCZg8VAQ3mlr3lt6XljZXkvY07ZAIED2QWAmYPFQIkMGUyOWZkZDctZDMzYy00ZWRiLThmYTItNDE3YjI5N2ZjMmZhAjEzZGTuVEDmLg4Lb2bFjUzcgfopqFaGlg==" />
+</div>
+
+<script type="text/javascript">__EVENTVALIDATION
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/zjthy/WebResource.axd?d=Cr6NY1haBII3CUWgTf-vRxkAVYzK1FJ6XORbJp5zHXYb1faJ2WnIXBUQYE-i4nGMszzp_Bd8NNpxf0uVdI32lDKWS0A1&amp;t=636283830560000000" type="text/javascript"></script>
+
+<script type="text/javascript" src="/zjthy/JavaScript/Commonfunction.js" charset="UTF-8" language="javascript" ></script><script>Epoint_ErrorImage = '/zjthy/WebResource.axd?d=agdoS88Ak69ob4aHI7q7N_dNCCAMZhzUI82cxmfzz_J1hb1IaCs7CYJ7O1C7rz9ip71jLikkAaSmIx8sM_HHwzYgSnxhUJ7dn6owGS2ayuvL7hhNlLGOhaLHgKYa-CMgbenWh72ojF6QUzt3r7Mzt8wXh528PmzJbD56BCHGhC3mHk2a0&t=636307138816087800';Epoint_BackgroundImage='/zjthy/WebResource.axd?d=DTkK8PZa4K7b-GMp0X1sJ_ktnxcIMp6G5ynQ0GF97Ue76YBlvFLtt2iOCsZJTFRcHkb4-7YelkNLPj0tCk27hOngfdYcARlle8EtaMyjOeg7TLBknPTV9O_3FSRRpcay7l_MWrE-RkQ2q3vbB6cUwT50FayZnymIuBDRYGD21EMS2nMAAHi2D39rBGg-M0UhZK0vmA2&t=636307138816087800';</script><script language="Javascript">function doCheck(el){var r=new RegExp("^\\s*(\\d+)\\s*$");if(r.test(el.value)){if(RegExp.$1<1||RegExp.$1>696){alert("页数超出范围！");document.all['ctl00$ContentPlaceHolder1$Pager_input'].select();return false;}return true;}alert("页索引无效！");document.all['ctl00$ContentPlaceHolder1$Pager_input'].select();return false;}</script><script language="javascript" > <!-- 
+function BuildUrlString(key,value){ var _key=key.toLowerCase(); var prms=location.search; if(prms.length==0) return location.pathname+"?"+_key+"="+value; var params=prms.substring(1).split("&"); var newparam=""; var found=false; for(i=0;i<params.length;i++){ if(params[i].split("=")[0].toLowerCase()==_key){ params[i]=_key+"="+value; found=true; break; } } if(found) return location.pathname+"?"+params.join("&"); else return location+"&"+_key+"="+value; }
+//--> </script>
+<script src="../../../JavaScript/MicrosoftAjax.js" type="text/javascript"></script>
+<script src="../../../JavaScript/MicrosoftAjaxWebForms.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if(!Epoint_ValidTextBox()) return false;
+return true;
+}
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="9FEC60E1" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdACP2QlZR+1u9zqoECm2OsC4GrfnIPkZuKyhOmttyPUNPKocakelSpQ+DHGTyp3hjJ7ZNj8z35o+M74GB60IF1ZfK2IVvUEcqFY1/NZ3Jp2CFppbEIjg5HhB6f00HuGBAUgj70D5TL37gF3NBBLcafd5b1O6V1DF6C0gGmhzJtpUODRYJQlpUkq6TotYpKY7pJdG1etolg4Mk2CMf7t4ZEeme/mY/fxzv3fGPt2E+mVnA6wub1HQaDjXWQehX4T+LiM2+s/8Dy0EmzpuG6S9aC1HsifUoo+kaGCJULeZm10vnlyWzo7KU+EyXRaP8CWlbKI7f6zgf6kKRJTRx0+9rpij5UIijX+JCns09Wz7TMIUOZyabM7YHNsaq+4ZqwXHvMtMwTDKBwASxdAi2UcHW2S3JkJiTH3PjNabnddIK8J5eku5BGMeasynVgqGFmcIAWhKciTKMmrOrAowV9ZOoh2vLkSfyM41zpx75cmT7PuTCfBBAEezAfWoFfM0qfufPfNGLM5u0/DwvDe2DZZ3fIWmRm/jjHHrZrNltNzA5Pk7A95z7hiU4/T5+p5kgODkCs4lAlTJyJhFN9AZ7gb0bLCcUQZVIqE+aqSQf8e09/qHG3BktxfVbijeDBpNq7fd743eOTFulzGhY80/Z1HbCJJ6L6RFrHwAfZLfe/Q6YUMw70+uaqAlMFH06sNwoIhlS+5x4PFMHlCawV/0dUguVtC+QYFGUl8+7vt8AZW1d0Pp0fb11P7eJGsG8UlvoJplTEKWNSwKb" />
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'aspnetForm', ['tctl00$ContentPlaceHolder1$UpdatePanel1',''], [], [], 36000, 'ctl00');
+//]]>
+</script>
+
+    <div id="ctl00_WebProcess1_upnlUpdate" style="display:none;">
+	
+        <div class="modalBackground" >
+            <div class="updateprogress" id="div_Process">
+                <p>
+                    <img src='/zjthy/Images/ajax_loader.gif' alt="Loading" />
+                    <span id="ctl00_WebProcess1_lblUpdateProgress">正在加载，请稍候...</span>
+                </p>
+            </div>
+        </div>
+    
+</div>
+<script>
+
+
+//alert(document.body.clientHeight)
+//alert(document.body.scrollHeight)
+//document.getElementById("Div_modalBackground").style.height=document.body.offsetHeight;
+</script>
+    <table border="0" width="100%" height="100%">
+        <tr>
+            <td height="3">
+                <!--顶部开始-->
+                <table border="0" width="100%" height="100%">
+                    <tr>
+                        <td id="LocationDiv_1">
+                            <div id="Div_Control_1Forlocation">
+                            </div>
+                        </td>
+                        <td id="LocationDiv">
+                            <table border="0" width="100%" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td width="10" align="center">
+                                        <div id="locationArrow">
+                                        </div>
+                                    </td>
+                                    <td id="location-content">
+                                        当前位置：单位信息查看
+                                    </td>
+                                    <td id="TitleInfo" align="center" nowrap>
+                                        
+                                    </td>
+                                    <td align="right">
+                                        
+                                        <span id="Span_close" class="CloseOut"  onmouseover="this.className='CloseOver'" onclick='javascript:window.close();' onmouseout="this.className='CloseOut'"></span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td id="LocationDiv_2">
+                            <div id="Div_Control_2Forlocation">
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <!--顶部结束-->
+            </td>
+        </tr>
+        <tr>
+            <td height="100%">
+                <!--中间开始-->
+                <table border="0" width="100%" height="100%">
+                    <tr>
+                        <td id="MainMiddle_1">
+                        </td>
+                        <td id="MainMiddle_bg">
+                            
+    <script type="text/javascript">			
+	
+    </script>
+    <div id="ctl00_ContentPlaceHolder1_UpdatePanel1">
+	
+            <table cellspacing="0" cellpadding="0" width="100%" align="left" border="0" class="table">
+                <tbody>
+                    <tr style="display: none">
+                        <td style="height: 30px" class="tablespecial" colspan="2">
+                            当前位置：<span id="ctl00_ContentPlaceHolder1_lblTableName"></span><input name="ctl00$ContentPlaceHolder1$HidState" type="hidden" id="ctl00_ContentPlaceHolder1_HidState" value="0" />
+                        </td>
+                    </tr>
+                    <tr class="tablespecial">
+                        <td id="ctl00_ContentPlaceHolder1_tdCl" valign="middle" align="center" colspan="2" style="display: block">
+                            
+                              <table id="ctl00_ContentPlaceHolder1_Table1" width="100%" cellspacing="1" class="TableSpecial">
+		<tr>
+			<td class="Tablespecial1" width="15%" align="Right">
+                                        地区选择
+                                    </td>
+			<td class="Tablespecial" width="35%" height="25" valign="middle">
+                                        <select name="ctl00$ContentPlaceHolder1$DDLXiaQu" id="ctl00_ContentPlaceHolder1_DDLXiaQu">
+				<option selected="selected" value="">请选择</option>
+				<option value="1">区外</option>
+				<option value="450100">南宁市</option>
+				<option value="450200">柳州市</option>
+				<option value="450300">桂林市</option>
+				<option value="450400">梧州市</option>
+				<option value="450500">北海市</option>
+				<option value="450600">防城港市</option>
+				<option value="450700">钦州市</option>
+				<option value="450800">贵港市</option>
+				<option value="450900">玉林市</option>
+				<option value="451000">百色市</option>
+				<option value="451100">贺州市</option>
+				<option value="451200">河池市</option>
+				<option value="451300">来宾市</option>
+				<option value="451400">崇左市</option>
+
+			</select>
+                                    </td>
+			<td class="Tablespecial1" width="15%" align="Right">
+                                        单位类型
+                                    </td>
+			<td class="Tablespecial" width="35%" height="25" valign="middle">
+                                        <select name="ctl00$ContentPlaceHolder1$DDLDanWeiType" id="ctl00_ContentPlaceHolder1_DDLDanWeiType">
+				<option selected="selected" value="">所有</option>
+				<option value="19">检测机构</option>
+				<option value="18">招标代理</option>
+				<option value="13">施工单位</option>
+				<option value="14">监理单位</option>
+				<option value="11">建设单位</option>
+				<option value="15">勘察单位</option>
+				<option value="16">设计单位</option>
+				<option value="52">房地产企业</option>
+				<option value="42">施工图审机构</option>
+				<option value="20">园林单位</option>
+
+			</select>
+                                    </td>
+		</tr>
+		<tr>
+			<td class="Tablespecial1" width="15%" align="Right">
+                                        单位名称
+                                    </td>
+			<td class="Tablespecial" width="35%" height="25" valign="middle">
+                                      <input name="ctl00$ContentPlaceHolder1$txtDanWeiName" type="text" id="ctl00_ContentPlaceHolder1_txtDanWeiName" class="inputtxt" style="width:100%;" />
+                                    </td>
+		</tr>
+	</table>
+	
+                        </td>
+	
+                    </tr>
+                    <tr>
+                        <td style="height: 31px">
+                            &nbsp;<input type="submit" name="ctl00$ContentPlaceHolder1$btnSearch" value="打开搜索" id="ctl00_ContentPlaceHolder1_btnSearch" class="btnbg" onmouseover="this.className=&#39;Btnover&#39;" onmouseout="this.className=&#39;btnbg&#39;" />
+                            <input type="submit" name="ctl00$ContentPlaceHolder1$btnOK" value="查找" id="ctl00_ContentPlaceHolder1_btnOK" class="btnbg" onmouseover="this.className=&#39;Btnover&#39;" onmouseout="this.className=&#39;btnbg&#39;" />
+                        </td>
+                        <td align="right" style="display: none">
+                    </tr>
+                    <tr>
+                        <td align="right" colspan="2" style="height: 31px" class="tablespecial">
+                            
+	<!------------------------------ AspNetPager V4.3.3 Start ------------------------------>
+	<!-------------------- Copyright:2003-2005 Webdiyer(www.webdiyer.com) --------------------->
+	<div id="ctl00_ContentPlaceHolder1_Pager">
+		<table width="100%" border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td valign="bottom" align="left" nowrap="true" style="width:40%;">记录总数：<font color="blue"><b>13905</b></font> 总页数：<font color="blue"><b>696</b></font> 当前页：<font color="red"><b>1</b></font></td><td valign="bottom" align="notset" nowrap="true" class="" style="width:60%;"><img src="/zjthy/images/page/firstg.gif" border="0" align="Baseline" /><span style="width:5px;"></span><img src="/zjthy/images/page/prevg.gif" border="0" align="Baseline" /><span style="width:5px;"></span><img src="/zjthy/images/page/1r.gif" align="Baseline" border="0" /><span style="width:5px;"></span><a href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$Pager&#39;,&#39;2&#39;)" title="转到第2页"><img src="/zjthy/images/page/2n.gif" align="Baseline" border="0" /></a><span style="width:5px;"></span><a href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$Pager&#39;,&#39;3&#39;)" title="转到第3页"><img src="/zjthy/images/page/3n.gif" align="Baseline" border="0" /></a><span style="width:5px;"></span><a href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$Pager&#39;,&#39;4&#39;)" title="转到第4页"><img src="/zjthy/images/page/4n.gif" align="Baseline" border="0" /></a><span style="width:5px;"></span><a href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$Pager&#39;,&#39;5&#39;)" title="转到第5页"><img src="/zjthy/images/page/5n.gif" align="Baseline" border="0" /></a><span style="width:5px;"></span><a href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$Pager&#39;,&#39;6&#39;)" title="转到第6页"><img src="/zjthy/images/page/6n.gif" align="Baseline" border="0" /></a><span style="width:5px;"></span><a href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$Pager&#39;,&#39;7&#39;)" title="转到第7页"><img src="/zjthy/images/page/7n.gif" align="Baseline" border="0" /></a><span style="width:5px;"></span><a href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$Pager&#39;,&#39;8&#39;)" title="转到第8页"><img src="/zjthy/images/page/8n.gif" align="Baseline" border="0" /></a><span style="width:5px;"></span><a href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$Pager&#39;,&#39;9&#39;)" title="转到第9页"><img src="/zjthy/images/page/9n.gif" align="Baseline" border="0" /></a><span style="width:5px;"></span><a href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$Pager&#39;,&#39;10&#39;)" title="转到第10页"><img src="/zjthy/images/page/1n.gif" align="Baseline" border="0" /><img src="/zjthy/images/page/0n.gif" align="Baseline" border="0" /></a><span style="width:5px;"></span><a href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$Pager&#39;,&#39;11&#39;)" title="转到第11页"><img src="/zjthy/images/page/moren.gif" border="0" align="Baseline" /></a><span style="width:5px;"></span><a href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$Pager&#39;,&#39;2&#39;)" title="转到第2页"><img src="/zjthy/images/page/nextn.gif" border="0" align="Baseline" /></a><span style="width:5px;"></span><a href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$Pager&#39;,&#39;696&#39;)" title="转到第696页"><img src="/zjthy/images/page/lastn.gif" border="0" align="Baseline" /></a><span style="width:5px;"></span>&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" value="1" class="inputtxt" name="ctl00$ContentPlaceHolder1$Pager_input" onkeydown="if(event.keyCode==13){if(doCheck(document.all[&#39;ctl00$ContentPlaceHolder1$Pager_input&#39;]))__doPostBack(&#39;ctl00$ContentPlaceHolder1$Pager&#39;,document.all[&#39;ctl00$ContentPlaceHolder1$Pager_input&#39;].value);else{event.returnValue=false;}}" style="width:30px;" /><input type="Submit" name="ctl00$ContentPlaceHolder1$Pager" value="go" class="backendbtn22" onclick="return doCheck(document.all[&#39;ctl00$ContentPlaceHolder1$Pager_input&#39;])" /></td>
+			</tr>
+		</table>
+	</div>
+	<!------------------------------- AspNetPager V4.3.3 End -------------------------------->
+
+	
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" colspan="2">
+                            <table accesskey="1" class="GridView" cellspacing="1" rules="all" id="ctl00_ContentPlaceHolder1_Datagrid1" style="border-width:1px;border-style:solid;width:100%;">
+		<tr class="HeaderStyle" align="center" style="height:30px;">
+			<td align="center" style="width:40px;">序号</td><td><a href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$Datagrid1$ctl02$ctl00&#39;,&#39;&#39;)">单位名称</a></td><td><a href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$Datagrid1$ctl02$ctl01&#39;,&#39;&#39;)">注册所在地</a></td><td><a href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$Datagrid1$ctl02$ctl02&#39;,&#39;&#39;)">单位类型</a></td><td>查看</td>
+		</tr><tr class="RowItemsStyle">
+			<td align="center" style="width:40px;">1</td><td>
+                                          <a target ="_blank" href="../../../HuiYuanInfomis/backend/FrameAll.aspx?DanWeiGuid=0005afa8-7405-4154-b7e0-6fe6e1b98004&DanWeiType=13"><span id ="dd" style="color :Red" > 南宁铭联装饰工程有限公司</span> </a> 
+                                        </td><td>
+                                            
+                                        </td><td>
+                                            施工单位;
+                                        </td><td align="center" style="width:40px;">
+                                            <input id="btnCheck" type="button" value="查看" class="btnbg" onclick="OpenWindow('../../../HuiYuanInfomis/backend/FrameAll.aspx?DanWeiGuid=0005afa8-7405-4154-b7e0-6fe6e1b98004&DanWeiType=13&Type=2')" />
+                                        </td>
+		</tr><tr class="RowStyle">
+			<td align="center" style="width:40px;">2</td><td>
+                                          <a target ="_blank" href="../../../HuiYuanInfomis/backend/FrameAll.aspx?DanWeiGuid=316c860b-85ff-490c-ac79-a84b2f5f4adf&DanWeiType=13"><span id ="dd" style="color :Red" > 82587A2EC8D61005</span> </a> 
+                                        </td><td>
+                                            
+                                        </td><td>
+                                            施工单位;
+                                        </td><td align="center" style="width:40px;">
+                                            <input id="btnCheck" type="button" value="查看" class="btnbg" onclick="OpenWindow('../../../HuiYuanInfomis/backend/FrameAll.aspx?DanWeiGuid=316c860b-85ff-490c-ac79-a84b2f5f4adf&DanWeiType=13&Type=2')" />
+                                        </td>
+		</tr><tr class="RowItemsStyle">
+			<td align="center" style="width:40px;">3</td><td>
+                                          <a target ="_blank" href="../../../HuiYuanInfomis/backend/FrameAll.aspx?DanWeiGuid=001386d3-2c53-4adb-b3ac-029c7e12c3c8&DanWeiType=13"><span id ="dd" style="color :Red" > 广西集美组设计工程有限公司</span> </a> 
+                                        </td><td>
+                                            
+                                        </td><td>
+                                            施工单位;
+                                        </td><td align="center" style="width:40px;">
+                                            <input id="btnCheck" type="button" value="查看" class="btnbg" onclick="OpenWindow('../../../HuiYuanInfomis/backend/FrameAll.aspx?DanWeiGuid=001386d3-2c53-4adb-b3ac-029c7e12c3c8&DanWeiType=13&Type=2')" />
+                                        </td>
+		</tr><tr class="RowStyle">
+			<td align="center" style="width:40px;">4</td><td>
+                                          <a target ="_blank" href="../../../HuiYuanInfomis/backend/FrameAll.aspx?DanWeiGuid=0015EE58-7A0A-4DB0-84EA-3AB160C3EF4C&DanWeiType=13"><span id ="dd" style="color :Red" > 南宁市聚美堂装饰工程有限公司</span> </a> 
+                                        </td><td>
+                                            
+                                        </td><td>
+                                            施工单位;
+                                        </td><td align="center" style="width:40px;">
+                                            <input id="btnCheck" type="button" value="查看" class="btnbg" onclick="OpenWindow('../../../HuiYuanInfomis/backend/FrameAll.aspx?DanWeiGuid=0015EE58-7A0A-4DB0-84EA-3AB160C3EF4C&DanWeiType=13&Type=2')" />
+                                        </td>
+		</tr><tr class="RowItemsStyle">
+			<td align="center" style="width:40px;">5</td><td>
+                                          <a target ="_blank" href="../../../HuiYuanInfomis/backend/FrameAll.aspx?DanWeiGuid=aa2a6a4b-0537-4f30-ad38-f92db7ec32ce&DanWeiType=13"><span id ="dd" style="color :Red" > 中承国际工程有限公司</span> </a> 
+                                        </td><td>
+                                            江西省·南昌市·青云谱区
+                                        </td><td>
+                                            施工单位;
+                                        </td><td align="center" style="width:40px;">
+                                            <input id="btnCheck" type="button" value="查看" class="btnbg" onclick="OpenWindow('../../../HuiYuanInfomis/backend/FrameAll.aspx?DanWeiGuid=aa2a6a4b-0537-4f30-ad38-f92db7ec32ce&DanWeiType=13&Type=2')" />
+                                        </td>
+		</tr><tr class="RowStyle">
+			<td align="center" style="width:40px;">6</td><td>
+                                          <a target ="_blank" href="../../../HuiYuanInfomis/backend/FrameAll.aspx?DanWeiGuid=fe318bcc-2d37-43bb-869b-2d0f2f2da75d&DanWeiType=13"><span id ="dd" style="color :Red" > 82587A18F10E4F07</span> </a> 
+                                        </td><td>
+                                            
+                                        </td><td>
+                                            施工单位;
+                                        </td><td align="center" style="width:40px;">
+                                            <input id="btnCheck" type="button" value="查看" class="btnbg" onclick="OpenWindow('../../../HuiYuanInfomis/backend/FrameAll.aspx?DanWeiGuid=fe318bcc-2d37-43bb-869b-2d0f2f2da75d&DanWeiType=13&Type=2')" />
+                                        </td>
+		</tr><tr class="RowItemsStyle">
+			<td align="center" style="width:40px;">7</td><td>
+                                          <a target ="_blank" href="../../../HuiYuanInfomis/backend/FrameAll.aspx?DanWeiGuid=7fde7ad1-4f25-4bfd-b0d3-6586f1a0ad0c&DanWeiType=13"><span id ="dd" style="color :Red" > 武汉宏盛建筑安装有限公司</span> </a> 
+                                        </td><td>
+                                            
+                                        </td><td>
+                                            施工单位;
+                                        </td><td align="center" style="width:40px;">
+                                            <input id="btnCheck" type="button" value="查看" class="btnbg" onclick="OpenWindow('../../../HuiYuanInfomis/backend/FrameAll.aspx?DanWeiGuid=7fde7ad1-4f25-4bfd-b0d3-6586f1a0ad0c&DanWeiType=13&Type=2')" />
+                                        </td>
+		</tr><tr class="RowStyle">
+			<td align="center" style="width:40px;">8</td><td>
+                                          <a target ="_blank" href="../../../HuiYuanInfomis/backend/FrameAll.aspx?DanWeiGuid=002d8e0e-2ff3-4e51-9c14-57be0a9fb025&DanWeiType=13"><span id ="dd" style="color :Red" > 柳州中联装饰工程有限公司</span> </a> 
+                                        </td><td>
+                                            
+                                        </td><td>
+                                            施工单位;
+                                        </td><td align="center" style="width:40px;">
+                                            <input id="btnCheck" type="button" value="查看" class="btnbg" onclick="OpenWindow('../../../HuiYuanInfomis/backend/FrameAll.aspx?DanWeiGuid=002d8e0e-2ff3-4e51-9c14-57be0a9fb025&DanWeiType=13&Type=2')" />
+                                        </td>
+		</tr><tr class="RowItemsStyle">
+			<td align="center" style="width:40px;">9</td><td>
+                                          <a target ="_blank" href="../../../HuiYuanInfomis/backend/FrameAll.aspx?DanWeiGuid=a79cd1f3-4b2d-445b-88a5-ffd8604ef670&DanWeiType=13"><span id ="dd" style="color :Red" > 广西瑞泰建设有限公司</span> </a> 
+                                        </td><td>
+                                            广西壮族自治区·玉林市·玉州区
+                                        </td><td>
+                                            施工单位;
+                                        </td><td align="center" style="width:40px;">
+                                            <input id="btnCheck" type="button" value="查看" class="btnbg" onclick="OpenWindow('../../../HuiYuanInfomis/backend/FrameAll.aspx?DanWeiGuid=a79cd1f3-4b2d-445b-88a5-ffd8604ef670&DanWeiType=13&Type=2')" />
+                                        </td>
+		</tr><tr class="RowStyle">
+			<td align="center" style="width:40px;">10</td><td>
+                                          <a target ="_blank" href="../../../HuiYuanInfomis/backend/FrameAll.aspx?DanWeiGuid=007C0F5A-E2AE-405B-8875-BED2F79DBFA0&DanWeiType=13"><span id ="dd" style="color :Red" > 南宁市深港装饰工程有限责任公司</span> </a> 
+                                        </td><td>
+                                            
+                                        </td><td>
+                                            施工单位;
+                                        </td><td align="center" style="width:40px;">
+                                            <input id="btnCheck" type="button" value="查看" class="btnbg" onclick="OpenWindow('../../../HuiYuanInfomis/backend/FrameAll.aspx?DanWeiGuid=007C0F5A-E2AE-405B-8875-BED2F79DBFA0&DanWeiType=13&Type=2')" />
+                                        </td>
+		</tr><tr class="RowItemsStyle">
+			<td align="center" style="width:40px;">11</td><td>
+                                          <a target ="_blank" href="../../../HuiYuanInfomis/backend/FrameAll.aspx?DanWeiGuid=00ba861d-d2c4-420f-b5a0-f43ca8f5d294&DanWeiType=13"><span id ="dd" style="color :Red" > 广西平果天厦混凝土有限公司</span> </a> 
+                                        </td><td>
+                                            
+                                        </td><td>
+                                            施工单位;
+                                        </td><td align="center" style="width:40px;">
+                                            <input id="btnCheck" type="button" value="查看" class="btnbg" onclick="OpenWindow('../../../HuiYuanInfomis/backend/FrameAll.aspx?DanWeiGuid=00ba861d-d2c4-420f-b5a0-f43ca8f5d294&DanWeiType=13&Type=2')" />
+                                        </td>
+		</tr><tr class="RowStyle">
+			<td align="center" style="width:40px;">12</td><td>
+                                          <a target ="_blank" href="../../../HuiYuanInfomis/backend/FrameAll.aspx?DanWeiGuid=d282d031-c18c-4062-b21d-c6e4c8066cae&DanWeiType=13"><span id ="dd" style="color :Red" > 广西阳光建筑工程有限公司</span> </a> 
+                                        </td><td>
+                                            广西壮族自治区·南宁市·青秀区
+                                        </td><td>
+                                            施工单位;
+                                        </td><td align="center" style="width:40px;">
+                                            <input id="btnCheck" type="button" value="查看" class="btnbg" onclick="OpenWindow('../../../HuiYuanInfomis/backend/FrameAll.aspx?DanWeiGuid=d282d031-c18c-4062-b21d-c6e4c8066cae&DanWeiType=13&Type=2')" />
+                                        </td>
+		</tr><tr class="RowItemsStyle">
+			<td align="center" style="width:40px;">13</td><td>
+                                          <a target ="_blank" href="../../../HuiYuanInfomis/backend/FrameAll.aspx?DanWeiGuid=EF3714EF-B56F-4706-B994-8F57EA912442&DanWeiType=13"><span id ="dd" style="color :Red" > 灌阳县第二建筑公司</span> </a> 
+                                        </td><td>
+                                            广西壮族自治区·桂林市·灌阳县
+                                        </td><td>
+                                            施工单位;
+                                        </td><td align="center" style="width:40px;">
+                                            <input id="btnCheck" type="button" value="查看" class="btnbg" onclick="OpenWindow('../../../HuiYuanInfomis/backend/FrameAll.aspx?DanWeiGuid=EF3714EF-B56F-4706-B994-8F57EA912442&DanWeiType=13&Type=2')" />
+                                        </td>
+		</tr><tr class="RowStyle">
+			<td align="center" style="width:40px;">14</td><td>
+                                          <a target ="_blank" href="../../../HuiYuanInfomis/backend/FrameAll.aspx?DanWeiGuid=0d305591-85dc-428b-807d-fcb802c3e4b5&DanWeiType=13"><span id ="dd" style="color :Red" > 南宁市银凯建筑装饰有限责任公司</span> </a> 
+                                        </td><td>
+                                            
+                                        </td><td>
+                                            施工单位;
+                                        </td><td align="center" style="width:40px;">
+                                            <input id="btnCheck" type="button" value="查看" class="btnbg" onclick="OpenWindow('../../../HuiYuanInfomis/backend/FrameAll.aspx?DanWeiGuid=0d305591-85dc-428b-807d-fcb802c3e4b5&DanWeiType=13&Type=2')" />
+                                        </td>
+		</tr><tr class="RowItemsStyle">
+			<td align="center" style="width:40px;">15</td><td>
+                                          <a target ="_blank" href="../../../HuiYuanInfomis/backend/FrameAll.aspx?DanWeiGuid=7fd69e8e-b5ba-4a2f-a021-efbe7248b5e7&DanWeiType=13"><span id ="dd" style="color :Red" > 上饶市广信园林绿化工程有限公司</span> </a> 
+                                        </td><td>
+                                            江西省·上饶市·信州区
+                                        </td><td>
+                                            施工单位;
+                                        </td><td align="center" style="width:40px;">
+                                            <input id="btnCheck" type="button" value="查看" class="btnbg" onclick="OpenWindow('../../../HuiYuanInfomis/backend/FrameAll.aspx?DanWeiGuid=7fd69e8e-b5ba-4a2f-a021-efbe7248b5e7&DanWeiType=13&Type=2')" />
+                                        </td>
+		</tr><tr class="RowStyle">
+			<td align="center" style="width:40px;">16</td><td>
+                                          <a target ="_blank" href="../../../HuiYuanInfomis/backend/FrameAll.aspx?DanWeiGuid=0D49B493-CBB0-45C4-A65B-19D337DE2C2B&DanWeiType=13"><span id ="dd" style="color :Red" > 博白县建筑工程装饰公司</span> </a> 
+                                        </td><td>
+                                            
+                                        </td><td>
+                                            施工单位;
+                                        </td><td align="center" style="width:40px;">
+                                            <input id="btnCheck" type="button" value="查看" class="btnbg" onclick="OpenWindow('../../../HuiYuanInfomis/backend/FrameAll.aspx?DanWeiGuid=0D49B493-CBB0-45C4-A65B-19D337DE2C2B&DanWeiType=13&Type=2')" />
+                                        </td>
+		</tr><tr class="RowItemsStyle">
+			<td align="center" style="width:40px;">17</td><td>
+                                          <a target ="_blank" href="../../../HuiYuanInfomis/backend/FrameAll.aspx?DanWeiGuid=0DC39A49-1767-4921-A19E-B11AA430C45C&DanWeiType=13"><span id ="dd" style="color :Red" > 南宁安保信系统工程有限公司</span> </a> 
+                                        </td><td>
+                                            
+                                        </td><td>
+                                            施工单位;
+                                        </td><td align="center" style="width:40px;">
+                                            <input id="btnCheck" type="button" value="查看" class="btnbg" onclick="OpenWindow('../../../HuiYuanInfomis/backend/FrameAll.aspx?DanWeiGuid=0DC39A49-1767-4921-A19E-B11AA430C45C&DanWeiType=13&Type=2')" />
+                                        </td>
+		</tr><tr class="RowStyle">
+			<td align="center" style="width:40px;">18</td><td>
+                                          <a target ="_blank" href="../../../HuiYuanInfomis/backend/FrameAll.aspx?DanWeiGuid=0DD34DDE-8C20-4617-82F6-FCD7D50C68E4&DanWeiType=13"><span id ="dd" style="color :Red" > 南宁腾宁商品混凝土有限公司</span> </a> 
+                                        </td><td>
+                                            
+                                        </td><td>
+                                            施工单位;
+                                        </td><td align="center" style="width:40px;">
+                                            <input id="btnCheck" type="button" value="查看" class="btnbg" onclick="OpenWindow('../../../HuiYuanInfomis/backend/FrameAll.aspx?DanWeiGuid=0DD34DDE-8C20-4617-82F6-FCD7D50C68E4&DanWeiType=13&Type=2')" />
+                                        </td>
+		</tr><tr class="RowItemsStyle">
+			<td align="center" style="width:40px;">19</td><td>
+                                          <a target ="_blank" href="../../../HuiYuanInfomis/backend/FrameAll.aspx?DanWeiGuid=0df68f0a-2b25-4726-825b-6493fdf70bcd&DanWeiType=13"><span id ="dd" style="color :Red" > 南宁市高祥仓储有限责任公司</span> </a> 
+                                        </td><td>
+                                            
+                                        </td><td>
+                                            施工单位;
+                                        </td><td align="center" style="width:40px;">
+                                            <input id="btnCheck" type="button" value="查看" class="btnbg" onclick="OpenWindow('../../../HuiYuanInfomis/backend/FrameAll.aspx?DanWeiGuid=0df68f0a-2b25-4726-825b-6493fdf70bcd&DanWeiType=13&Type=2')" />
+                                        </td>
+		</tr><tr class="RowStyle">
+			<td align="center" style="width:40px;">20</td><td>
+                                          <a target ="_blank" href="../../../HuiYuanInfomis/backend/FrameAll.aspx?DanWeiGuid=0e29fdd7-d33c-4edb-8fa2-417b297fc2fa&DanWeiType=13"><span id ="dd" style="color :Red" > 南宁市百亨建筑劳务分包有限公司</span> </a> 
+                                        </td><td>
+                                            
+                                        </td><td>
+                                            施工单位;
+                                        </td><td align="center" style="width:40px;">
+                                            <input id="btnCheck" type="button" value="查看" class="btnbg" onclick="OpenWindow('../../../HuiYuanInfomis/backend/FrameAll.aspx?DanWeiGuid=0e29fdd7-d33c-4edb-8fa2-417b297fc2fa&DanWeiType=13&Type=2')" />
+                                        </td>
+		</tr>
+	</table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        
+</div>
+    &nbsp;
+
+                        </td>
+                        <td id="MainMiddle_2">
+                        </td>
+                    </tr>
+                </table>
+                <!--中间结束-->
+            </td>
+        </tr>
+        <tr>
+            <td height="3">
+                <!--底部开始-->
+                <table border="0" width="100%" height="100%">
+                    <tr>
+                        <td id="MainBottom_1">
+                        </td>
+                        <td id="MainBottom_bg">
+                            <div id="MainBottom_bgitem">
+                            </div>
+                        </td>
+                        <td id="MainBottom_2">
+                        </td>
+                    </tr>
+                </table>
+                <!--底部结束-->
+            </td>
+        </tr>
+    </table>
+    
+<script type="text/javascript" src="/zjthy/JavaScript/compose20060430.js" charset="UTF-8" language="javascript" ></script><script type="text/javascript" src="/zjthy/JavaScript/dataGridcolor.js" charset="UTF-8" language="javascript" ></script><script type="text/javascript" src="/zjthy/JavaScript/Page_Validation.js" charset="UTF-8" language="javascript" ></script>
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.add_init(function() {
+    $create(Sys.UI._UpdateProgress, {"associatedUpdatePanelId":null,"displayAfter":400,"dynamicLayout":true}, null, null, $get("ctl00_WebProcess1_upnlUpdate"));
+});
+Init_NormalText('ctl00_ContentPlaceHolder1_txtDanWeiName','nomal','Normal','',true,true,true,"",0,true,2,false);Init_Button('ctl00_ContentPlaceHolder1_btnSearch','normal',true);Init_Button('ctl00_ContentPlaceHolder1_btnOK','normal',true);//]]>
+</script>
+</form>
+    
+<link href="/zjthy/Epoint_Client/Epoint.Dialog/Themes/Office2007/style.css"
+    rel="stylesheet" />
+
+<script>
+    //-----------------------------------------------
+    //显示对话框
+    //    pageUrl：对话框中显示的页面地址
+    //    Title：对话框标题
+    //    width:对话框宽度
+    //    height:对话框高度
+    //--------------------------------------
+    function ShowDivDialog(pageUrl, Title, width, height) {
+
+        today = new Date();
+        if (pageUrl.indexOf("?") < 0) {
+            pageUrl = pageUrl + "?xxxx=" + Math.random();
+        }
+        else {
+            pageUrl = pageUrl + "&xxxx=" + Math.random();
+        }
+
+        if (width == null)
+            width = 600;
+        if (height == null)
+            height = 400;
+
+        if (Title == null)
+            Title = "新点对话框";
+
+        var d_mask = document.getElementById('dialog_mask');
+        var d_dialog = document.getElementById('dialog');
+        d_mask.style.width = document.body.clientWidth;
+        d_mask.style.height = document.body.clientHeight;
+
+        d_dialog.style.height = height;
+        d_dialog.style.width = width;
+
+
+        var left = document.body.clientWidth / 2 - parseInt(d_dialog.style.width) / 2;
+        var top = document.body.clientHeight / 2 - parseInt(d_dialog.style.height) / 2;
+
+
+        d_dialog.style.left = left;
+        d_dialog.style.top = top;
+
+        document.getElementById("iframe_Dialog").src = pageUrl;
+        document.getElementById("DialogTitle").innerHTML = Title;
+
+        document.getElementById("iframe_Dialog").style.width = width - 40;
+        document.getElementById("iframe_Dialog").style.height = height - 60;
+
+        d_mask.style.visibility = 'visible';
+        d_dialog.style.visibility = 'visible';
+    }
+
+    //-----------------------------------------------
+    //关闭对话框
+    //--------------------------------------
+    function CloseDivDialog() {
+        var d_mask = document.getElementById('dialog_mask');
+        var d_dialog = document.getElementById("dialog");
+        d_mask.style.visibility = 'hidden';
+        d_dialog.style.visibility = 'hidden';
+
+    }
+
+    //-----------------------------------------------
+    //移动对话框初始化
+    //--------------------------------------
+    function Epoint_Move_Init(obj, pNode) {
+        myC_x = event.x - pNode.style.pixelLeft;
+        myC_y = event.y - pNode.style.pixelTop;
+        obj.setCapture();
+    }
+
+    //-----------------------------------------------
+    //停止拖拽
+    //--------------------------------------
+    function Epoint_Move_Stopdrag(obj) {
+        obj.releaseCapture(); //释放当前对象的鼠标捕捉 
+    }
+
+    //-----------------------------------------------
+    //移动对话框
+    //--------------------------------------
+    function Epoint_Move(obj, id) {
+        if (event.button == 1) {
+            var X = obj.clientLeft;
+            var Y = obj.clientTop;
+            obj.style.pixelLeft = X + (event.x - myC_x);
+            obj.style.pixelTop = Y + (event.y - myC_y);
+        }
+    }
+
+</script>
+
+<div class="ceifdialogshadow" id="dialog_mask">
+</div>
+<div class="ceifdialog" style="z-index: 8888; left: 0px; overflow: visible; width: 482px;
+    position: absolute; top: -2000px; visibility: visible" id="dialog">
+    <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
+        <tr style='cursor: hand;' onmousedown='Epoint_Move_Init(this,this.parentNode.parentNode.parentNode);'
+            onmouseup='Epoint_Move_Stopdrag(this);' onmousemove='Epoint_Move(this.parentElement.parentElement.parentElement)'>
+            <td class="ceifdialogtl">
+                <img border="0" height="35" src="/zjthy/Epoint_Client/Epoint.Dialog/Themes/images/1x1.gif"
+                    width="1" />
+            </td>
+            <td class="ceifdialogtop">
+                <div class="ceifdialogtitletext" id="DialogTitle">
+                </div>
+                <a class="btnClose" href="javascript:void(0)" title="关" onclick="CloseDivDialog();">
+                </a>
+            </td>
+            <td class="ceifdialogtr">
+            </td>
+        </tr>
+        <tr height="100%">
+            <td class="ceifdialogleftbar" style='cursor: move;' onmousedown='Epoint_Move_Init(this,this.parentNode.parentNode.parentNode.parentNode);'
+                onmouseup='Epoint_Move_Stopdrag(this);' onmousemove='Epoint_Move(this.parentElement.parentElement.parentElement.parentElement)'>
+                <img border="0" height="1" src="/zjthy/Epoint_Client/Epoint.Dialog/Themes/images/1x1.gif"
+                    width="15" />
+            </td>
+            <td class="ceifdialogcenter">
+                <iframe frameborder="0" src="" id="iframe_Dialog" style="width: 100%; height: 100%">
+                </iframe>
+            </td>
+            <td class="ceifdialogrightbar" style='cursor: move;' onmousedown='Epoint_Move_Init(this,this.parentNode.parentNode.parentNode.parentNode);'
+                onmouseup='Epoint_Move_Stopdrag(this);' onmousemove='Epoint_Move(this.parentElement.parentElement.parentElement.parentElement)'>
+                <img border="0" height="1" src="/zjthy/Epoint_Client/Epoint.Dialog/Office2007/Themes/images/1x1.gif"
+                    width="15" />
+            </td>
+        </tr>
+        <tr style='cursor: move;' onmousedown='Epoint_Move_Init(this,this.parentNode.parentNode.parentNode);' onmouseup='Epoint_Move_Stopdrag(this);'
+            onmousemove='Epoint_Move(this.parentElement.parentElement.parentElement)'>
+            <td class="ceifdialogbottomleft">
+            </td>
+            <td class="ceifdialogbottom">
+            </td>
+            <td class="ceifdialogbottomright">
+            </td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>
